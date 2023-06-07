@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order breackdown</title>
+    <link rel="stylesheet" href="../css/add_job.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/page_layout.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">TawaSul</h2>
+        <p class="title">خدمات نقل المركبات-تقديم للعمل في خدمة نقل السيارات</p>
+    </header>
+
+    <main class="container">
+        <div class="container_top">
+            <form class="order_first_step" method="POST" action="">
+<!-- ------------------ -->
+                <div class="in">
+                <label for="name">الأسم:</label><br>
+                <input class="inbar" type="text" id="name" name="name" placeholder="الأسم الأول والثاني" required>
+                </div>
+
+                <div class="in">
+                <label for="phone">رقم الهاتف الجوال:</label><br>
+                <input class="inbar" type="tel" id="phone" name="phone" placeholder="xxxxxxxx" required maxlength="8">
+                </div>
+                
+                <div class="in">
+                <label for="ID">رقم الهوية القطرية:</label><br>
+                <input class="inbar" type="text" id="ID" name="ID" placeholder="xxxxxxxxxxx" required maxlength="11">
+                </div>
+
+                <div class="in">
+                <label for="ID">رقم لوحة المركبة:</label>
+                <input class="inbar" type="text" id="ID" name="car_number" maxlength="6">
+                </div>
+<!-- ------------------- -->
+                <p class="car_size_title">قدرة رفع مركبة النقل (اختر كل المتوافق)</p>
+                <div class="car_size" style="margin-top: 5px;">
+                    
+                    <div class="car">
+                    <label for="big_car">سيارة كبير</label>
+                    <input type="checkbox" class="btn" id="big_car" name="car_size" form="order_first_step" ></input><br>
+                    </div>
+
+                    <div class="car">
+                    <label for="medium_car">سيارة وسط</label>
+                    <input type="checkbox" class="btn" id="medium_car" name="car_size" form="order_first_step" ></input><br>
+                    </div>
+
+                    <div class="car">
+                    <label for="small_car">سيارة صغير</label>
+                    <input class="btn" type="checkbox" id="small_car" name="car_size" form="order_first_step" ></input><br>
+                    </div>
+                </div>
+                <!-- ------------------ -->
+                <button class="submit"  type="submit">التالي</button>
+            </form>
+        </div>
+<!-- ------------------- -->
+        <div class="container_bottom">
+            <button type="button" class="button"><a class="option" href="main_page_AR.html">العودة إلى الصفحة الرئيسية</a></button>
+        </div>
+<!-- -------------------- -->
+    </main>
+
+    <footer>
+        <p class="mail">geoservice@gmail.com</p>
+        <p class="phone">contsct us at :+974 66696218</p>
+    </footer>
+    <script src="../html/add_job.html"></script>
+</body>
+</html>

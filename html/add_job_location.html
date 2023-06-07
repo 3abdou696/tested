@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order breackdown</title>
+    <link rel="stylesheet" href="../css/add_job_location.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/page_layout.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">TawaSul</h2>
+        <p class="title">خدمات نقل المركبات-تقديم للعمل في خدمة نقل السيارات</p>
+    </header>
+
+    <main class="container">
+        <div class="container_top">
+            <form class="order_first_step" method="post" action="#">
+<!-- ------------------ -->
+                <div class="location">
+                    <p>أدخل الموقع الخاص بك</p>
+                        <div class="in">
+                        <label for="home">رقم المنزل:</label><br>
+                        <input class="inbar" type="text" id="home" name="home" required>
+                        </div>
+        
+                        <div class="in">
+                        <label for="zone">رقم المنطقة:</label><br>
+                        <input class="inbar" type="text" id="zone" name="zone" required>
+                        </div>
+        
+                        <div class="in">
+                        <label for="street">رقم الشارع:</label><br>
+                        <input class="inbar" type="text" id="street" name="street">
+                        </div>
+                        <button onclick="showPosition()" type="button" id="location" class="loc">أرسل موقعك</button>
+                        <pre id="result"></pre>
+                </div>
+                <!-- ------------------ -->
+                <input class="submit" formaction="" type="submit" id="submit" value="التالي" name="submit">
+
+            </form>
+        </div>
+<!-- ------------------- -->
+        <div class="container_bottom">
+            <button type="button" class="button"><a class="option" href="main_page_AR.html">العودة إلى الصفحة الرئيسية</a></button>
+        </div>
+<!-- -------------------- -->
+    </main>
+
+    <footer>
+        <p class="mail">geoservice@gmail.com</p>
+        <p class="phone">contsct us at :+974 66696218</p>
+    </footer>
+    <script src="../js/add_job_location.js"></script>
+</body>
+</html>

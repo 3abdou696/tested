@@ -1,0 +1,68 @@
+.container{
+    background-image: url('../img/seamless-background.jpg');
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container_top,.container_bottom{
+    width: fit-content;
+    margin: 2%;
+}
+
+.container_top{
+    margin: 3%;
+    min-width: calc(current screen width);
+    color: #38000e;
+    padding: 20px;
+    background-color: white;
+    border: 5px solid #38000e;
+    border-radius: 20px;
+}
+.in{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    
+}
+.car{
+    display: flex;
+    align-items: center;
+    text-align:center;
+    flex-direction: column;
+    border: 2px solid #38000e;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.inbar{
+    border: 2px solid #38000e;
+    margin-top: 3%;
+}
+.car_size{
+    display: flex;
+    justify-content: space-around;
+}
+label,.car_size_title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.submit{
+    color: white;
+    background-color: #38000e;
+    padding: 3px;
+}
+.option{
+    font-size: 18px;
+    font-weight: 700;
+}
+@media screen and (max-width:340px){
+    .in{
+        flex-direction: column;
+    }
+    .option,footer,.title{
+        font-size: 80%;
+    }
+    p.mail,p.phone{
+        padding: 0;
+    }
+}

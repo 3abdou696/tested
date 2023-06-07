@@ -1,0 +1,22 @@
+.main{
+    flex: 1;
+    overflow: scroll;
+    background-image: url('../img/seamless-background.jpg');
+    display:flex;
+    /* flex-direction: row; */
+}
+.button{
+    display:inline-block;
+    margin: 10px;
+}
+.main_contaner{
+    display: flex;
+    /* flex-direction: column; */
+}
+@media screen and (max-width:750px){
+    .main_contaner{display: flex; flex-direction: column;}
+    .button{
+        display: flex;
+        flex-direction: column;
+    }
+}

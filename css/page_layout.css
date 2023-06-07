@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    height: -webkit-fill-available;
+}
+html{
+    height: -webkit-fill-available;
+}
+
+/* header */
+header{
+    color: white;
+    font-size: 100%;
+    background-color: #38000ef4;
+    display: grid;
+    grid-template-areas: 'logo  info';
+}
+header.logo{grid-area: logo;}
+header.info{grid-area: info;}
+
+.logo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    padding: 15px;
+}
+.title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: right;
+    padding: 15px;
+}
+
+
+/* footer */
+footer{
+    background-color:rgb(254, 248, 240);
+    display: grid;
+    grid-template-areas: 'mail  phone';
+}
+footer.mail{grid-area: mail;}
+footer.phone{grid-area: phone;}
+
+.mail{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: left;
+    padding: 15px;
+    font-weight: 900;
+    color: #38000e;
+}
+
+.phone{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: right;
+    padding: 15px;
+    font-weight: 900;
+    color: #38000e;
+}
+
+
+body::-webkit-scrollbar{width: 0.25rem;}
+body::-webkit-scrollbar-track{background: white;}
+body::-webkit-scrollbar-thumb{background: #38000ef4;}

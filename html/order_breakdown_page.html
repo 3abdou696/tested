@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order breackdown</title>
+    <link rel="stylesheet" href="../css/order_breakdown_page.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/page_layout.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">TawaSul</h2>
+        <p class="title">خدمات نقل المركبات-طلب خدمة نقل سيارات</p>
+    </header>
+
+    <main class="container">
+        <div class="container_top">
+            <form class="order_first_step" method="post" action="#">
+<!-- ------------------ -->
+                <div class="in">
+                <label for="name">الأسم:</label><br>
+                <input class="inbar" type="text" id="name" name="name" placeholder="الأسم الأول والثاني" required>
+                </div>
+
+                <div class="in">
+                <label for="phone">رقم الهاتف الجوال:</label><br>
+                <input class="inbar" type="tel" id="phone" name="phone" placeholder="xxxxxxxx" required maxlength="8">
+                </div>
+
+                <div class="in">
+                <label for="ID">رقم الهوية القطرية:</label><br>
+                <input class="inbar" type="text" id="ID" name="ID" placeholder="xxxxxxxxxxx" required maxlength="11">
+                </div>
+
+                <div class="in">
+                <label for="ID">رقم لوحة المركبة:</label>
+                <input class="inbar" type="text" id="ID" name="car_number" maxlength="6">
+                </div>
+<!-- ------------------- -->
+                <div style="margin-top: 5px;">
+                <p class="car_size_title">أختر حجم السيارة</p>
+            
+                <label for="big_car">سيارة كبير</label>
+                <input type="radio" class="btn" id="big_car" name="car_size" required></input><br>
+
+                
+                <label for="medium_car">سيارة وسط</label>
+                <input type="radio" class="btn" id="medium_car" name="car_size" required></input><br>
+
+                <label for="small_car">سيارة صغير</label>
+                <input type="radio" class="btn" id="small_car" name="car_size" required></input><br>
+                </div>
+                <!-- ------------------ -->
+                
+                <input class="submit" type="submit" formaction="add_job_location.html" id="submit" value="التالي" name="submit">
+            </form>
+        </div>
+<!-- ------------------- -->
+        <div class="container_bottom">
+            <button type="button" class="button"><a class="option" href="main_page_AR.html">العودة إلى الصفحة الرئيسية</a></button>
+        </div>
+<!-- -------------------- -->
+    </main>
+
+    <footer>
+        <p class="mail">geoservice@gmail.com</p>
+        <p class="phone">contsct us at :+974 66696218</p>
+    </footer>
+</body>
+</html>
